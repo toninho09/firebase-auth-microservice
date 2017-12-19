@@ -38,6 +38,18 @@ Para criar a imagem da aplicação utilizar o comando
 ````shell
 docker build -t auth .
 ````
+
+Para rodar utilizando a imagem do docker
+````shell
+docker run -d --name micro-auth-firebase -p 80:8080 -v /you/api.json:/root/api.json auth
+````
+ 
+ Como alternativa pode-se usar a imagem do docker hub `toninho09/firebase-auth-microservice`, que pode ser baixada utilizando o comando
+ 
+ ````shell
+ docker pull toninho09/firebase-auth-microservice
+ ````
+ 
  
 # Serviços
 
