@@ -22,7 +22,7 @@ func getEnviroment(field string , defaultValue string) string{
 }
 
 func getPort() string{
-	return getEnviroment("PORT","8082")
+	return getEnviroment("PORT","8080")
 }
 
 func getEnvironmentRelease() string{
