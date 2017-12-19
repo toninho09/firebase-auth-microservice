@@ -29,7 +29,7 @@ As configurações são feitas utilizando variáveis de ambiente
 * PORT : Configura a porta que o serviço estará disponível, default  `8080` 
 * ENV : Define o ambiente em que o sistema está rodando, Valores `DEV` , `PROD`
 
-Copie o arquivo de autenticação do firebase para o arquivo api.json
+Copie o arquivo de autenticação do firebase para o arquivo `api.json`
 
 ## Docker
 
