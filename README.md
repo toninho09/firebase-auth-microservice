@@ -70,8 +70,12 @@ Verifica se o token e válido, caso o token não seja valido, o HTTP_STATUS de r
 
 ````json
 {
-	"message": "Ok",
-	"data": null
+	"iss": "https://securetoken.google.com/xxxxxxx",
+	"aud": "xxxxx",
+	"exp": 1513713402,
+	"iat": 1513709802,
+	"sub": "qPD5IBB....",
+	"uid": "qPD5IBB...."
 }
 ````
 

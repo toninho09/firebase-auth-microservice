@@ -46,12 +46,12 @@ func verify(c *gin.Context) {
 	var json VerifyStruct
 	if err := c.ShouldBindJSON(&json); err == nil {
 
-		_, err := client.VerifyIDToken(json.Token)
+		data, err := client.VerifyIDToken(json.Token)
 		if err != nil {
 			c.JSON(401, returnResponse( ERROR_TOKEN_INVALID))
 			panic(err)
 		}
-		c.JSON(200, returnResponse( MESSAGE_OK))
+		c.JSON(200, data)
 	} else {
 	c.JSON(500, returnResponse( ERROR_MESSAGE_GENERIC))
 	panic(err)
